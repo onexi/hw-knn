@@ -155,7 +155,7 @@ exercise.five = function(data){
 	var myPoints = [];
 	for (var i=1; i<=10; i++) {
 		x = i;
-		y = classify(tt, i);
+		y = classify(halved, i);
 		myPoints.push({"x":x, "y":y});
 		counter++;
 	}
