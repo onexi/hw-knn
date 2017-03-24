@@ -13,7 +13,7 @@ exercise.one = function(){
         var commaIndex = trimput.indexOf(',');
         var onesAndZeroes = trimput.slice(0,commaIndex);
         var theLabel = trimput.slice(commaIndex+1, commaIndex+2);
-        console.log(theLabel);
+
         digitstructure.push({
             label: theLabel,
             digits: onesAndZeroes
@@ -29,7 +29,16 @@ exercise.two = function(data){
     //---- Your Code ----
     //-------------------
     // JM added here:
-    
+    var randomIndex = Math.floor(Math.random() * data.length);
+    var trainList = [];
+    var testList = [];
+
+    trainList = data.slice(0,randomIndex);
+    testList = data.slice(randomIndex, data.length);
+    //console.log(trainList.length + ' ' + testList.length);
+
+    return { train: trainList, test: testList};
+
 };
 
 exercise.three = function(data){
