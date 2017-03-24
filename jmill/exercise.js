@@ -45,7 +45,32 @@ exercise.three = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 3rd function not implemented';
+    //JM added here:
+    //?
+    var arrayOfDistances = [];
+
+    data.test.forEach(function (testNumbers, testIndex) {
+        var tempMat = [];
+        var tempNumMat = [];
+        data.train.forEach(function (trainNumbers, trainIndex) {
+            var temporarySum = 0;
+            for (var i = 0, length = testNumbers.digits.length; i < length; i++){
+                var delta = testNumbers.digits[i] - trainNumbers.digits[i];
+                dualdelta = delta * delta;
+                var temporarySum = temporarySum + dualdelta;
+            };
+            var tempSumSqrt = Math.sqrt(temporarySum);
+            tempMat.push({ 
+                test: testIndex, 
+                train: trainIndex, 
+                dist: tempSumSqrt, 
+                testNumber: testNumbers.label, 
+                trainNumber: trainNumbers.label 
+            });
+        });
+        arrayOfDistances.push(tempMat);
+    });
+    return arrayOfDistances;
 };
 
 
