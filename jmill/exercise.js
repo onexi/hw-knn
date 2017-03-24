@@ -78,7 +78,31 @@ exercise.four = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 4th function not implemented';
+    // JM added below:
+    data.forEach(function (item) {
+        item.sort(function (a, b) { return a.dist - b.dist; });
+    });
+
+    var k = 3;
+    var matches = [];
+    data.forEach(function (item) {
+        var classification = {};
+        for (var i = 0; i < k; i++) { //loop through train nums k times
+            classification[item[i].trainNumber] = (classification[item[i].trainNumber] || 0) + 1;
+        }
+
+        var keyNum = 11; //11 is for error checking
+        var max = 0;
+        for (var key in classification) {
+            if (classification[key] > max) {
+                keyNum = key;
+                max = classification[key];
+            }
+        }
+        matches.push({ actual: item[0].testNumber, guess: keyNum });
+    });
+
+    return matches;
 };
 
 exercise.five = function(data){
