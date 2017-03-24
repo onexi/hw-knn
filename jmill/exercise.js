@@ -109,7 +109,15 @@ exercise.five = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 5th function not implemented';
+    // JM added here:
+    var correct=data.reduce(function(total,item){
+        if(item.actual==item.guess){
+            total+=1;
+        }
+        return total;
+    },0);
+
+    return {correct:correct,length:data.length};
 };
 
 module.exports = exercise;
