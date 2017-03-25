@@ -7,18 +7,20 @@ exercise.one = function(){
     //-------------------
     // JM added here:
     var digitstructure = [];
-    var trimput = input.replace(/ /g,''); //remove whitespace
+
+    var trimput = input.slice(0,input.length);
+    //var trimput = input.replace(/ /g,''); //remove whitespace
     
     while (trimput.indexOf(',') != -1){
         var commaIndex = trimput.indexOf(',');
         var onesAndZeroes = trimput.slice(0,commaIndex);
-        var theLabel = trimput.slice(commaIndex+1, commaIndex+2);
+        var theLabel = trimput.slice(commaIndex+2, commaIndex+3);
 
         digitstructure.push({
             label: theLabel,
             digits: onesAndZeroes
         });
-        trimput = trimput.slice(commaIndex+3, trimput.length);
+        trimput = trimput.slice(commaIndex+4, trimput.length);
     };
     return digitstructure;
 
