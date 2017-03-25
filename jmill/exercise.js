@@ -29,17 +29,28 @@ exercise.two = function(data){
     //---- Your Code ----
     //-------------------
     // JM added here:
-    var randomIndex = Math.floor(Math.random() * data.length);
-    var trainList = [];
-    var testList = [];
 
-    trainList = data.slice(0,randomIndex);
-    testList = data.slice(randomIndex, data.length);
-    //console.log(trainList.length + ' ' + testList.length);
+    var shuffleArray = data.slice(0,data.length);
+    var shuffled = {};
 
-    return { train: trainList, test: testList};
-
+    var shuffle = function(arrayToShuffle){
+        for (var i = arrayToShuffle.length - 1; i > 0; i--){
+            var n = Math.floor(Math.random() * (i + 1));
+            var temporary = arrayToShuffle[i];
+            arrayToShuffle[i] = arrayToShuffle[n];
+            arrayToShuffle[n] = temporary;
+        };
+        var testingData = arrayToShuffle.splice(0, Math.ceil(arrayToShuffle.length / 2));
+        var trainingData = arrayToShuffle;
+        shuffled = {
+            'test' : testingData, 
+            'train': trainingData};
+    };
+    
+    shuffle(shuffleArray); // Warning: directly modifies the array passed in.
+    return shuffled;    
 };
+
 
 exercise.three = function(data){
     //-------------------
