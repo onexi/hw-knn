@@ -39,15 +39,16 @@ exercise.two = function(data){
     var shuffle = function(arrayToShuffle){
         for (var i = arrayToShuffle.length - 1; i > 0; i--){
             var n = Math.floor(Math.random() * (i + 1));
-            var temporary = arrayToShuffle[i];
+            var tempArray = arrayToShuffle[i];
             arrayToShuffle[i] = arrayToShuffle[n];
-            arrayToShuffle[n] = temporary;
+            arrayToShuffle[n] = tempArray;
         };
         var testingData = arrayToShuffle.splice(0, Math.ceil(arrayToShuffle.length / 2));
         var trainingData = arrayToShuffle;
         shuffled = {
             'test' : testingData, 
-            'train': trainingData};
+            'train': trainingData
+        };
     };
     
     shuffle(shuffleArray); // Warning: directly modifies the array passed in.
@@ -99,7 +100,7 @@ exercise.four = function(data){
     //---- Your Code ----
     //-------------------
     // JM added below:
-    
+
     data.forEach(function (item) {
         item.sort(function (a, b) { return a.dist - b.dist; });
     });
