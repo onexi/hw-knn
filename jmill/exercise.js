@@ -113,17 +113,23 @@ exercise.four = function(data){
         // Go through the training data k times
         for (var i = 0; i < k; i++) { 
             classification[item[i].trainNumber] = (classification[item[i].trainNumber] || 0) + 1;
-        }
+        };
 
-        var keyNum = 11; //11 is for error checking
+        // Colleague: Set high number for error checking
+        var keyNumber = 11; 
+
         var max = 0;
         for (var key in classification) {
             if (classification[key] > max) {
-                keyNum = key;
+                keyNumber = key;
                 max = classification[key];
-            }
-        }
-        matches.push({ actual: item[0].testNumber, guess: keyNum });
+            };
+        };
+
+        matches.push({ 
+            actual: item[0].testNumber, 
+            claimed: keyNumber 
+        });
     });
 
     return matches;
