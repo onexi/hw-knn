@@ -6,6 +6,7 @@ exercise.one = function(){
     //---- Your Code ----
     //-------------------
     // JM added here:
+
     var digitstructure = [];
 
     var trimput = input.slice(0,input.length);
@@ -59,20 +60,26 @@ exercise.three = function(data){
     //---- Your Code ----
     //-------------------
     //JM added here:
-    //?
+
+    // return distances;
     var arrayOfDistances = [];
 
     data.test.forEach(function (testNumbers, testIndex) {
         var tempMat = [];
         var tempNumMat = [];
+
         data.train.forEach(function (trainNumbers, trainIndex) {
+            // initialize sum
             var temporarySum = 0;
+
             for (var i = 0, length = testNumbers.digits.length; i < length; i++){
                 var delta = testNumbers.digits[i] - trainNumbers.digits[i];
-                dualdelta = delta * delta;
+                var dualdelta = delta * delta;
                 var temporarySum = temporarySum + dualdelta;
             };
+
             var tempSumSqrt = Math.sqrt(temporarySum);
+            
             tempMat.push({ 
                 test: testIndex, 
                 train: trainIndex, 
@@ -92,15 +99,19 @@ exercise.four = function(data){
     //---- Your Code ----
     //-------------------
     // JM added below:
+    
     data.forEach(function (item) {
         item.sort(function (a, b) { return a.dist - b.dist; });
     });
 
     var k = 3;
     var matches = [];
+
+
     data.forEach(function (item) {
         var classification = {};
-        for (var i = 0; i < k; i++) { //loop through train nums k times
+        // Go through the training data k times
+        for (var i = 0; i < k; i++) { 
             classification[item[i].trainNumber] = (classification[item[i].trainNumber] || 0) + 1;
         }
 
@@ -123,14 +134,18 @@ exercise.five = function(data){
     //---- Your Code ----
     //-------------------
     // JM added here:
+
     var correct=data.reduce(function(total,item){
-        if(item.actual==item.guess){
-            total+=1;
-        }
+        if (item.actual == item.claimed){
+            total += 1;
+        };
         return total;
     },0);
 
-    return {correct:correct,length:data.length};
+    return {
+        correct: correct,
+        length: data.length
+    };
 };
 
 module.exports = exercise;
