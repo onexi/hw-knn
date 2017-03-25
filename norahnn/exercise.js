@@ -1,4 +1,4 @@
-var input    = require('./digits.js');
+   var input    = require('./digits.js');
 var exercise = {};
 
 exercise.one = function(){
@@ -21,14 +21,34 @@ exercise.two = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return "abd".slice(1,3)
+
+    for (var i = data.length - 1; i > 0; i -= 1) {
+        var j = Math.floor(Math.random() * (i + 1))
+        var temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
+
+    return {train: data.splice(0,Math.floor(data.length / 2)),test: data};
+
 };
 
 exercise.three = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 3rd function not implemented';
+    data.test.forEach(function(testPoint){
+        var distances=[];
+        data.train.forEach(function(trainPoint){
+            var sumOfSquares=0;
+            for( var i=0; i<trainPoint.digits.length;i++){
+                sumOfSquares+=(testPoint.digits[i]-trainPoint.digits[i])*(testPoint.digits[i]-trainPoint.digits[i]);
+            }
+            distances.push({distance:Math.sqrt(sumOfSquares),label: trainPoint.label}); 
+        });
+        testPoint.distances=distances;
+    });
+    return data;
 };
 
 
@@ -36,14 +56,33 @@ exercise.four = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 4th function not implemented';
+    numCorrect=0;
+    data.test.forEach(function(testPoint){
+        testPoint.distances.sort(function(elm1,elm2){
+            return elm1.distance-elm2.distance;
+        });
+        if (testPoint.distances[0].label===testPoint.label){
+            numCorrect++;
+        }      
+    });
+    data.test.corret=numCorrect;
+    return data;
 };
 
 exercise.five = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 5th function not implemented';
+    numCorrect=0;
+    data.test.forEach(function(testPoint){
+        testPoint.distances.sort(function(elm1,elm2){
+            return elm1.distance-elm2.distance;
+        });
+        if (testPoint.distances[0].label===testPoint.label){
+            numCorrect++;
+        }      
+    });
+    data.test.corret=numCorrect;
+    return data;
 };
-
 module.exports = exercise;
