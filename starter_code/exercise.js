@@ -5,7 +5,8 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 1st function not implemented';
+    var test = 'Testing phase finally'
+    return 'Testing phase 1 ' + test;
 };
 
 exercise.two = function(data){
