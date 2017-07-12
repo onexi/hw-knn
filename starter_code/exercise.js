@@ -5,7 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    var test = 'Testing phase 555'
+    var test = 'Testing phase ok'
     return 'Testing phase 1 ' + test;
 };
 
