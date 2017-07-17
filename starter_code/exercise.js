@@ -5,7 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: brant test 1';
+    return 'Error: brant test 2';
 };
 
 exercise.two = function(data){
