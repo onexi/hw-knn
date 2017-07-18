@@ -4,7 +4,6 @@ var exercise = {};
 exercise.one = function(){
     //-------------------
     //---- Your Code ----
-    // test
     //-------------------
     return 'Error: 1st function not implemented';
 };
