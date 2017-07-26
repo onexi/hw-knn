@@ -2,8 +2,10 @@ var input    = require('./digits.js');
 var exercise = {};
 
 exercise.one = function(){
-    console.log("something is here");
-    return 'Error: asdf function not implemented';
+    //-------------------
+    //---- Your Code ----
+    //-------------------
+    return 'Error: testing';
 };
 
 exercise.two = function(data){
