@@ -5,7 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: whee testing function not implemented';
+    return 'Error: test';
 };
 
 exercise.two = function(data){
