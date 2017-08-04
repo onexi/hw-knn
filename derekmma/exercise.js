@@ -5,7 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Test 1620';
+    return 'Test 1623';
 };
 
 exercise.two = function(data){
