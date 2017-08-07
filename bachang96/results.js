@@ -1,3 +1,3 @@
-var results = ['asd', '123'];
+var results = ['123', '456'];
 
 module.exports = results;
