@@ -5,7 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 1st function not implemented 0032';
+    return 'Error: 1st function not implemented 0033';
 };
 
 exercise.two = function(data){
