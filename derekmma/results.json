@@ -1,0 +1,202 @@
+{
+    "results": [
+        {
+            "stats": {
+                "suites": 2,
+                "tests": 4,
+                "passes": 2,
+                "pending": 0,
+                "failures": 2,
+                "start": "2017-08-15T18:11:20.944Z",
+                "end": "2017-08-15T18:11:20.960Z",
+                "duration": 16
+            },
+            "tests": [
+                {
+                    "title": "local no tests available",
+                    "fullTitle": "There are no tests for this HW local no tests available",
+                    "duration": 1,
+                    "currentRetry": 0,
+                    "err": {}
+                },
+                {
+                    "title": "local testing",
+                    "fullTitle": "There are no tests for this HW local testing",
+                    "duration": 2,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 1 to equal 2",
+                        "showDiff": true,
+                        "actual": 1,
+                        "expected": 2,
+                        "stack": "AssertionError: expected 1 to equal 2\n    at Context.<anonymous> (test/test.js:9:19)"
+                    }
+                },
+                {
+                    "title": "local should fail",
+                    "fullTitle": "Mock test local should fail",
+                    "duration": 1,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 2 to equal 1",
+                        "showDiff": true,
+                        "actual": 2,
+                        "expected": 1,
+                        "stack": "AssertionError: expected 2 to equal 1\n    at Context.<anonymous> (test/test.js:15:19)"
+                    }
+                },
+                {
+                    "title": "local should pass",
+                    "fullTitle": "Mock test local should pass",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {}
+                }
+            ],
+            "pending": [],
+            "failures": [
+                {
+                    "title": "local testing",
+                    "fullTitle": "There are no tests for this HW local testing",
+                    "duration": 2,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 1 to equal 2",
+                        "showDiff": true,
+                        "actual": 1,
+                        "expected": 2,
+                        "stack": "AssertionError: expected 1 to equal 2\n    at Context.<anonymous> (test/test.js:9:19)"
+                    }
+                },
+                {
+                    "title": "local should fail",
+                    "fullTitle": "Mock test local should fail",
+                    "duration": 1,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 2 to equal 1",
+                        "showDiff": true,
+                        "actual": 2,
+                        "expected": 1,
+                        "stack": "AssertionError: expected 2 to equal 1\n    at Context.<anonymous> (test/test.js:15:19)"
+                    }
+                }
+            ],
+            "passes": [
+                {
+                    "title": "local no tests available",
+                    "fullTitle": "There are no tests for this HW local no tests available",
+                    "duration": 1,
+                    "currentRetry": 0,
+                    "err": {}
+                },
+                {
+                    "title": "local should pass",
+                    "fullTitle": "Mock test local should pass",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {}
+                }
+            ]
+        },
+        {
+            "stats": {
+                "suites": 2,
+                "tests": 4,
+                "passes": 2,
+                "pending": 0,
+                "failures": 2,
+                "start": "2017-08-15T18:11:41.437Z",
+                "end": "2017-08-15T18:11:41.452Z",
+                "duration": 15
+            },
+            "tests": [
+                {
+                    "title": "local2 no tests available",
+                    "fullTitle": "There are no tests for this HW local2 no tests available",
+                    "duration": 2,
+                    "currentRetry": 0,
+                    "err": {}
+                },
+                {
+                    "title": "local2 testing",
+                    "fullTitle": "There are no tests for this HW local2 testing",
+                    "duration": 3,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 1 to equal 2",
+                        "showDiff": true,
+                        "actual": 1,
+                        "expected": 2,
+                        "stack": "AssertionError: expected 1 to equal 2\n    at Context.<anonymous> (test/test.js:9:19)"
+                    }
+                },
+                {
+                    "title": "local2 should fail",
+                    "fullTitle": "Mock test local2 should fail",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 2 to equal 1",
+                        "showDiff": true,
+                        "actual": 2,
+                        "expected": 1,
+                        "stack": "AssertionError: expected 2 to equal 1\n    at Context.<anonymous> (test/test.js:15:19)"
+                    }
+                },
+                {
+                    "title": "local2 should pass",
+                    "fullTitle": "Mock test local2 should pass",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {}
+                }
+            ],
+            "pending": [],
+            "failures": [
+                {
+                    "title": "local2 testing",
+                    "fullTitle": "There are no tests for this HW local2 testing",
+                    "duration": 3,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 1 to equal 2",
+                        "showDiff": true,
+                        "actual": 1,
+                        "expected": 2,
+                        "stack": "AssertionError: expected 1 to equal 2\n    at Context.<anonymous> (test/test.js:9:19)"
+                    }
+                },
+                {
+                    "title": "local2 should fail",
+                    "fullTitle": "Mock test local2 should fail",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {
+                        "message": "expected 2 to equal 1",
+                        "showDiff": true,
+                        "actual": 2,
+                        "expected": 1,
+                        "stack": "AssertionError: expected 2 to equal 1\n    at Context.<anonymous> (test/test.js:15:19)"
+                    }
+                }
+            ],
+            "passes": [
+                {
+                    "title": "local2 no tests available",
+                    "fullTitle": "There are no tests for this HW local2 no tests available",
+                    "duration": 2,
+                    "currentRetry": 0,
+                    "err": {}
+                },
+                {
+                    "title": "local2 should pass",
+                    "fullTitle": "Mock test local2 should pass",
+                    "duration": 0,
+                    "currentRetry": 0,
+                    "err": {}
+                }
+            ]
+        }
+    ]
+}
