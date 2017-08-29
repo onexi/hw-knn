@@ -27,7 +27,7 @@ exercise.four = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 4th function not implemented';
+    return 'Error: skdk4th function not implemented';
 };
 
 exercise.five = function(data){
