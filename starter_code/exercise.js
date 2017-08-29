@@ -12,7 +12,7 @@ exercise.two = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 2nd function not implemented';
+    return 'Error: 2nd fundfsction not implemented';
 };
 
 exercise.three = function(data){
