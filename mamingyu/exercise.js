@@ -19,7 +19,7 @@ exercise.three = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 3rd function not implemented';
+    return '1759';
 };
 
 
