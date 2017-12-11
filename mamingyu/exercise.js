@@ -12,7 +12,7 @@ exercise.two = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return '1750';
+    return '1752';
 };
 
 exercise.three = function(data){
