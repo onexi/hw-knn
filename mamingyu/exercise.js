@@ -5,6 +5,7 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
+    console.log('test0908');
     return '0859';
 };
 
