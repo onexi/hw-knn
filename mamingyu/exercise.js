@@ -6,7 +6,7 @@ exercise.one = function(){
     //---- Your Code ----
     //-------------------
     console.log('test0908');
-    return '0859';
+    return '1900';
 };
 
 exercise.two = function(data){
