@@ -5,8 +5,8 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    console.log('test0908');
-    return '1904';
+    console.log('test1935');
+    return '1935';
 };
 
 exercise.two = function(data){
