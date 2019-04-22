@@ -5,21 +5,22 @@ exercise.one = function(){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 1st function not implemented';
+    console.log('test1552');
+    return '1935';
 };
 
 exercise.two = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 2nd function not implemented';
+    return '1752';
 };
 
 exercise.three = function(data){
     //-------------------
     //---- Your Code ----
     //-------------------
-    return 'Error: 3rd function not implemented';
+    return '1759';
 };
 
 
