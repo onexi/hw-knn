@@ -2,7 +2,9 @@
     "name": "hw-knn",
     "description": "hw-knn",
     "author": "prof",
-    "keywords": ["hw-knn"],
+    "keywords": [
+        "hw-knn"
+    ],
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
